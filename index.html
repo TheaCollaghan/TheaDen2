@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Page</title>
+</head>
+<body>
+
+<h1>I can see thru your soul...</h1>
+
+<!-- Input field for the name -->
+<label for="nameInput">Your Name:</label>
+<input type="text" id="nameInput" placeholder="Enter your name">
+
+<!-- Button to trigger the greeting -->
+<button onclick="sayHello()">Let's See...</button>
+
+<!-- Area to display the greeting -->
+<p id="greetingText"></p>
+
+<!-- JavaScript to handle the greeting -->
+<script>
+    function sayHello() {
+        // Get the name input from the user
+        var name = document.getElementById("nameInput").value;
+
+        // Display the greeting message
+        document.getElementById("greetingText").innerText = name + " is an idiot!!!";
+    }
+</script>
+
+</body>
+</html>
